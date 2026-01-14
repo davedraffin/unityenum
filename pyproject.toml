@@ -1,0 +1,18 @@
+[project]
+name = "unity-docgen"
+version = "0.1.0"
+description = "Generate Unity Catalog permissions documentation from Databricks."
+requires-python = ">=3.10"
+readme = "README.md"
+license = { text = "Proprietary" }
+
+dependencies = [
+  "databricks-sdk>=0.18.0",
+  "pyyaml>=6.0.1",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
